@@ -1,122 +1,63 @@
-# Heart-Failure-Prediction
-❤️ Heart Failure Prediction App
+# ❤️ Heart Failure Prediction App
+This is a Machine Learning + Flask web app that predicts the risk of heart failure in a patient based on clinical records.
+You can input patient data through a web form, and the model will predict whether the patient is at high risk or low risk of death.
 
-This is a Machine Learning + Flask web application that predicts whether a patient is at high risk of heart failure based on clinical health records.
-
-🏥 Made for educational & learning purposes.
-
-
-⸻
-
-🚀 Features
-
-✅ Predicts heart failure risk (High / Low)
-✅ User-friendly web form
-✅ Trained using real clinical dataset
-✅ Built using Python, Flask & Scikit-learn
-✅ Beautiful custom CSS & responsive design
-
-⸻
-
-🧠 Dataset Used
-	•	Dataset: Heart Failure Clinical Records Dataset
-	•	Source: UCI Machine Learning Repository
-	•	Features: 12 clinical measurements
-	•	Target: DEATH_EVENT (0: survived, 1: died)
-
-⸻
-
-🔧 Tech Stack
-	•	Python 3.7+
-	•	Flask
-	•	Scikit-learn
-	•	Pandas
-	•	HTML & CSS
-
-⸻
-
-📝 Input Fields
-
-Feature	Type	Description
-age	float	Age of the patient
-anaemia	binary	Decrease of red blood cells
-creatinine_phosphokinase	integer	Enzyme level in blood
-diabetes	binary	If the patient has diabetes
-ejection_fraction	integer	Percentage of blood leaving the heart
-high_blood_pressure	binary	If the patient has hypertension
-platelets	float	Platelet count
-serum_creatinine	float	Creatinine level in blood
-serum_sodium	float	Sodium level in blood
-sex	binary	0 = Female, 1 = Male
-smoking	binary	Smoking history
-time	integer	Duration of follow-up in days
-
-
-⸻
-
-📂 Project Structure
-
+# Project Structure
+bash
+Copy
+Edit
 heart_failure_app/
-│
-├── app.py                  # Flask app
+├── app.py                  # Flask application
+├── train_model.py          # (optional) Script to train the ML model
 ├── model.pkl               # Trained ML model
-├── train_model.py          # (Optional) model training script
 ├── requirements.txt        # Python dependencies
+├── templates/
+│   └── index.html          # Frontend HTML page with custom CSS
+├── heart_failure_clinical_records_dataset.csv  # Dataset (optional)
 ├── README.md               # This file
-└── templates/
-    └── index.html          # Frontend UI
 
+# 🎨 Features
+✅ User-friendly web form.
+✅ Predicts whether the patient is at high risk or low risk of heart failure.
+✅ Attractive and unique CSS design.
+✅ Built with Python, Flask, and Scikit-learn.
+✅ Works locally in your browser.
 
-⸻
+# 📝 Inputs Required
+The form asks for the following 12 clinical parameters:
 
-⚙️ How to Run Locally
-	1.	Clone this repository:
+age
 
-git clone https://github.com/yourusername/heart-failure-prediction.git
-cd heart-failure-prediction
+anaemia
 
+creatinine_phosphokinase
 
-	2.	(Optional) Create & activate virtual environment:
+diabetes
 
-python -m venv .venv
-.venv\Scripts\Activate.ps1   # PowerShell
+ejection_fraction
 
+high_blood_pressure
 
-	3.	Install dependencies:
+platelets
 
-pip install -r requirements.txt
+serum_creatinine
 
+serum_sodium
 
-	4.	Run the app:
+sex
 
-python app.py
+smoking
 
+time
 
-	5.	Open your browser at:
+# 📦 Requirements
+Python 3.7+
+Flask
+Scikit-learn
+Pandas
 
-http://127.0.0.1:5000
-
-
-
-
-⸻
-
-✅ Output
-	•	⚠️ High risk of heart failure
-	•	✅ Low risk of heart failure
-
-Messages are shown in a friendly and easy-to-understand format.
-
-⸻
-
-🙋‍♂️ Author
-
-Made with ❤️ by AYUSH SHRIVASTAV
-Feel free to fork, improve, and contribute!
-
-⸻
-
-📄 License
-
-This project is licensed under the MIT License.
-Feel free to use for academic, personal, or demo purposes.
+# 📃 License
+This project is for educational purposes.
+Feel free to modify and improve it.
+# CONNECT 
+linkedin (AYUSH SHRIVASTAV)[http://linkedin.com/in/ayush-shrivastav-123869291]
