@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Heart Failure Prediction</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+        text-align: center;
+        padding: 20px;
+    }
+    h1 {
+        color: #4CAF50;
+    }
+    form {
+        background: #fff;
+        padding: 20px;
+        margin: 20px auto;
+        display: inline-block;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #aaa;
+    }
+    input[type="text"], input[type="number"] {
+        margin: 10px;
+        padding: 8px;
+        width: 200px;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .result {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Heart Failure Prediction</h1>
+
+<form action="/predict" method="post">
+    {% for col in ['age','anaemia','creatinine_phosphokinase','diabetes','ejection_fraction',
+                   'high_blood_pressure','platelets','serum_creatinine','serum_sodium',
+                   'sex','smoking','time'] %}
+        <input type="text" name="{{col}}" placeholder="{{col}}" required><br>
+    {% endfor %}
+    <input type="submit" value="Predict">
+</form>
+
+{% if prediction_text %}
+<div class="result">{{ prediction_text }}</div>
+{% endif %}
+
+</body>
+</html>

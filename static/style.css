@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.main-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: scale(1.03);
+}
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #fcd5ce;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input::placeholder {
+    color: #555;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #ff4b2b;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffe5e0;
+}
+
+.result-box {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #00ffcc;
+    font-weight: bold;
+    text-align: center;
+}
